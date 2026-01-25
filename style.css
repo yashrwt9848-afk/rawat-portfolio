@@ -1,180 +1,188 @@
 /* ---------------- Reset & Base ---------------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f2f2;
-  overflow-x: hidden;
-  overflow-y: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* ---------------- Header & Navbar ---------------- */
 header {
-  background-color: #222;
-  color: white;
-  padding: 20px;
-  text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 nav {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* ---------------- Main Section ---------------- */
 main {
-  width: 60%;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: white;
-  border-radius: 8px;
+    background-color: white;
+    width: 60%;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
 }
 
-/* ---------------- Welcome Section ---------------- */
+/* ---------------- Welcome / Content ---------------- */
 .content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .content img {
-  width: 150px;
-  border-radius: 50%;
+    width: 150px;
+    border-radius: 50%;
 }
 
 .text {
-  text-align: left;
+    text-align: left;
 }
 
 h2 {
-  color: darkblue;
-  margin-bottom: 10px;
+    color: darkblue;
+    margin-bottom: 10px;
 }
 
 button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: darkblue;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
-  background-color: black;
+    background-color: black;
+}
+
+/* ---------------- Video Section ---------------- */
+#video {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* ---------------- Projects Section ---------------- */
 #projects {
-  padding: 40px 0;
-  text-align: center;
-  background-color: #1a1a1a;
-  color: white;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
 }
 
 .projects-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .project-card {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  width: 200px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
 }
 
 .project-card img {
-  width: 100%;
-  border-radius: 5px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .project-card h3 {
-  margin: 10px 0 5px 0;
+    margin: 10px 0 5px 0;
 }
 
 .project-card p {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 /* ---------------- Skills Section ---------------- */
 #skills {
-  padding: 40px 20px;
-  width: 100%;
-  min-height: 100vh;
-  text-align: center;
-  background-color: #111;
-  color: white;
+    padding: 40px 20px;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #111;
+    color: white;
 }
 
 .skill-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  max-width: 100%;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 20px;
 }
 
 .skill-container span {
-  background-color: darkblue;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-weight: bold;
+    background-color: darkblue;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
 /* ---------------- MEDIA QUERY (Mobile / Tablet) ---------------- */
 @media (max-width: 768px) {
+    main {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
 
-  main {
-    width: 95%;
-    margin: 20px auto;
-    padding: 20px;
-  }
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .content {
-    flex-direction: column;
-    text-align: center;
-  }
+    .text {
+        text-align: center;
+    }
 
-  .text {
-    text-align: center;
-  }
+    .content img {
+        width: 120px;
+        margin-bottom: 15px;
+    }
 
-  .content img {
-    width: 120px;
-    margin-bottom: 15px;
-  }
+    button {
+        width: 100%;
+    }
 
-  button {
-    width: 100%;
-  }
-
-  .projects-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-card {
-    width: 80%;
-    margin-bottom: 15px;
-  }
+    .video-container video {
+        width: 100%;
+    }
 }
