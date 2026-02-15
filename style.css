@@ -208,3 +208,10 @@ footer p {
 .social-links a:hover {
     color: white;
 }
+.resume-btn {
+    background-color: darkgreen;
+}
+
+.resume-btn:hover {
+    background-color: black;
+}
