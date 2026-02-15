@@ -134,7 +134,6 @@ button:hover {
 #skills {
     padding: 40px 20px;
     width: 100%;
-    min-height: 100vh;
     text-align: center;
     background-color: #111;
     color: white;
@@ -185,4 +184,27 @@ button:hover {
     .video-container video {
         width: 100%;
     }
+}
+/* ---------------- Footer ---------------- */
+footer {
+    background-color: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #aaa;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: white;
 }
